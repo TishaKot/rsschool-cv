@@ -1,15 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>cv</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="assets/favicon.ico">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="assets/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;1,600&family=Inter:wght@100;200;300&family=Karla:wght@700&family=Lora:ital,wght@1,500&family=Nanum+Gothic:wght@400;700&family=Prompt:ital,wght@1,300&family=Quicksand:wght@300;400;500;600;700&family=Roboto:wght@100;300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;1,600&family=Inter:wght@100;200;300&family=Karla:wght@700&family=Lora:ital,wght@1,500&family=Nanum+Gothic:wght@400;700&family=Playpen+Sans:wght@200;300;400;500;600;700&family=Prompt:ital,wght@1,300&family=Quicksand:wght@300;400;500;600;700&family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
   </head>
   <body>
+    <!-- //section header -->
     <header class="header">
       <div class="container"></div>
       <nav class="nav">
@@ -26,6 +36,9 @@
           <li id="Courses" class="nav-item">
             <a href="#courses" class="nav-link">Courses</a>
           </li>
+          <li id="Skills" class="nav-item">
+            <a href="#skills" class="nav-link">Skills</a>
+          </li>
           <li id="Language" class="nav-item">
             <a href="#language" class="nav-link">Language</a>
           </li>
@@ -35,74 +48,152 @@
         </ul>
       </nav>
     </header>
-    <p>
-      <img class="avatar" src="assets/img/fdf.jpeg" width="300" alt="my photo">
-    </p>
+    <!-- //section header -->
+
+    <!-- //block main -->
     <main class="main-container">
-      <section class="section-title" id="profile">
-        <h1 class="line">Yulya Tsikhanovich</h1>
-        <p>Accountant</p>
+      <!-- //section title and avatar -->
+      <section class="section-title section_avatar" id="profile">
+        <div class="Wrap_avatar">
+        <img class="avatar" src="assets/img/fdf.jpeg" alt="my photo" />
+      </div>
+    <div class="name_avatar">
+        <h1 class="title_name">Yulya Tsikhanovich</h1>
+        <p class="profession">Accountant</p>
+      </div>
       </section>
+      <!-- //section title and avatar -->
+
+      <!-- //section Contacts -->
       <section class="section-title" id="contacts">
         <h2 class="line">Contacts</h2>
-        <ul class="connect">
+        <ul class="contacts">
+          <li>Location: Minsk, Belarus</li>
           <li>
-            <img src="assets/img/mail).jpg" width="20" alt="logomail">
+            <img src="assets/img/mail).jpg" width="20" alt="logomail" />E-mail:
             <a href="https://mail.ru/" target="_blank">ladi.89@mail.ru</a>
           </li>
           <li>
-            <img src="assets/img/github-logo.webp" width="20" alt="logoGit">
-            <a href="https://github.com/tishakot" target="_blank">GitHub: TishaKot</a>
+            <img
+              src="assets/img/github-logo.webp"
+              width="20"
+              alt="logoGit"
+            />GitHub:
+            <a href="https://github.com/tishakot" target="_blank">TishaKot</a>
           </li>
           <li>
-            <img src="assets/img/skype.png" width="20" alt="logoskype">
-            <a href="https://join.skype.com/invite/F6sesonhR1Ac" target="_blank">nlive:ladi.89</a>
+            <img src="assets/img/skype.png" width="20" alt="logoskype" />Skape:
+            <a href="https://join.skype.com/invite/F6sesonhR1Ac" target="_blank"
+              >ladi.89</a
+            >
           </li>
         </ul>
       </section>
+
+      <!-- //section Contacts -->
+
+      <!-- //section summary -->
       <section class="section-title" id="summary">
-        <h2 class="line">Summary</h2>
+        <h2 class="title">Summary</h2>
         <p>
-          I am interested in the topic of programming, namely development. I am
-          a visual person, so I became interested in the frontend. I am an
-          economist by education. My job is accounting. But there is a great
-          desire to plunge into the world of programming and become a junior
-          front-end developer.
+          My name is Julia. I am an economist by training, but I have been
+          working as an accountant for many years. A year ago I became
+          interested in programming, namely frontend, because I am a visual
+          person. I really want to master this profession in order to develop in
+          this direction, adding new skills to my experience, and I hope
+          studying at RS School will help me with this. I am a very versatile
+          person, sociable, I like to work in a team, share experiences,
+          improving myself and others. In my free time from work, I help
+          homeless animals, pick them up from the street, treat them and find
+          them new homes. This is my hobby. In addition, I like to read various
+          literature, run, walk a lot and prefer to relax in the fresh air.
         </p>
       </section>
+
+      <!-- //section summary -->
+
+      <!-- //section education -->
       <section class="section-title" id="education">
-        <h2 class="line">Education</h2>
-        <p>International Humanitarian Economic Institute</p>
+        <h2 class="title">Education</h2>
+        <p>University: International Humanitarian Economic Institute</p>
+        <p>Specialty: Economist - manager</p>
       </section>
       <section class="section-title" id="courses">
-        <h2 class="line">Courses</h2>
-        <p>JS / FRONT-END. STAGE 0</p>
+        <h2 class="title">Courses</h2>
+        <ul>
+          <li>Online course Udemy: Web developer</li>
+          <li>Online course Udemy: Intensive immersion in Java Script</li>
+          <li>
+            Online course Udemy: Complete course on Java Script from scratch to
+            results
+          </li>
+          <li>RS School, JS / Frontend, Stage 0</li>
+          <li>RS School. JS/Frontend Development Course. Stage 1</li>
+        </ul>
       </section>
+
+      <!-- //section education -->
+
+      <!-- //section skills -->
+      <section class="section-title" id="skills">
+        <h2 class=title">Skills</h2>
+        <ul>
+          <li>HTML/CSS</li>
+          <li>Git</li>
+          <li>Figma</li>
+          <li>Basics JS</li>
+        </ul>
+      </section>
+
+      <!-- //section skills -->
+
+      <!-- //section language -->
       <section class="section-title" id="language">
-        <h2 class="line">Language</h2>
+        <h2 class="title">Language</h2>
         <ul>
           <li>English - Pre-Intermediate</li>
           <li>Russian - Proficiency</li>
           <li>Belarusian - Pre-Advanced</li>
         </ul>
       </section>
+
+      <!-- //section language -->
+
+      <!-- //section code -->
       <section class="section-title" id="code">
-        <h2 class="line">Code</h2>
-        <p><code> function myFunction(n1, n2) { return n1 \* n2; } </code></p>
+        <h2 class="title">Code Example</h2>
+        <pre class="code_example">
+          <code>
+            " function startStudies() { 
+              for (let i = 3; i < 15; i++) {
+            console.log(i); } 
+          } "
+          </code>
+        </pre>
       </section>
-      <div class="container"></div>
-      <div class="block-left"></div>
-      <div class="block-right"></div>
+
+      <!-- //section code -->
     </main>
+
+    <!-- //block main -->
+
+    <!-- //block footer -->
     <footer class="footer">
       <div class="container"></div>
       <p>
         <a href="https://rs.school/js/">
-          <img class="avatar" src="assets/img/logo.png" width="56" alt="logoRs">
+          <img
+            class="avatar"
+            src="assets/img/logo.png"
+            width="56"
+            alt="logoRs"
+          />
         </a>
       </p>
       <a href="https://github.com/tishakot" target="_blank">TishaKot</a>
-      <p class="nomber">2023</p>
+      <p class="number">2023</p>
     </footer>
+
+    <!-- //block footer -->
   </body>
 </html>
