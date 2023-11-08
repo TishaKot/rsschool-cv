@@ -1,16 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;1,600&family=Inter:wght@100;200;300&family=Karla:wght@700&family=Lora:ital,wght@1,500&family=Nanum+Gothic:wght@400;700&family=Playpen+Sans:wght@200;300;400;500;600;700&family=Prompt:ital,wght@1,300&family=Quicksand:wght@300;400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
 * {
     box-sizing: border-box;
 }
 
 
 html {
+    width: 100%;
     scroll-behavior: smooth;
 }
 
 
 @font-face {
     font-family: Roboto;
-    src: url("assets/fonts/Jost/Jost-Italic-VariableFont_wght.ttf");
+    src: url("assets/fonts/Roboto/Roboto-Italic.ttf");
+}
+
+
+@font-face {
+    font-weight: 400;
+    /* Соответствует значению normal */
+    font-family: Roboto;
+    src: url("assets/fonts/Roboto/Roboto-Regular.ttf");
+}
+
+@font-face {
+    font-weight: 700;
+    /* Соответствует значению bold */
+    font-family: Roboto;
+    src: url("../fonts/Roboto-Bold.ttf");
+}
+
+@font-face {
+    font-weight: 300;
+    font-family: Roboto;
+    src: url("../fonts/Roboto-Light.ttf");
 }
 
 body {
@@ -18,7 +43,7 @@ body {
     color: dimgrey;
     font-family: 'Roboto', sans-serif;
     min-height: 100vh;
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
     display: flex;
     flex-direction: column;
@@ -65,10 +90,13 @@ body {
 }
 
 
-.main {
-    padding: 10px 0px;
+.main-container {
+    padding: 30px 70px;
 }
 
+.wrap_avatar {
+    margin-right: 144px;
+}
 
 .avatar {
     margin-top: 10px;
@@ -76,11 +104,65 @@ body {
     width: 300px;
 }
 
+.name_avatar {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 70px;
+    border-radius: 30px;
+    min-width: 550px;
+    background-color: rgb(203 197 206 / 30%);
+}
 
 .section_avatar {
     display: flex;
     flex-wrap: wrap;
 }
+
+.wrapper_blocks {
+    display: flex;
+    gap: 73px;
+    justify-content: space-between;
+}
+
+
+.contacts a {
+    color: #000;
+}
+
+.contacts a:hover {
+    color: #fff;
+}
+
+
+.left_block {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border-radius: 30px;
+    background-color: rgb(203 197 206 / 80%);
+}
+
+
+.text_summary {
+    display: flex;
+    text-align: justify;
+    max-width: 733px;
+    font-family: 'Roboto';
+    font-size: 20px;
+    color: #1c1111;
+    line-height: 50px;
+    letter-spacing: 1px;
+    font-style: italic;
+}
+
+
+.right_block {
+    display: flex;
+    flex-direction: column;
+    border-radius: 30px;
+    background-color: rgb(203 197 206 / 80%);
+}
+
 
 .section-title {
     width: 100%;
@@ -89,26 +171,78 @@ body {
 }
 
 .title_name {
-    margin: 57px 139px 20px 265px;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+    font-family: 'Roboto';
     font-size: 60px;
     color: #595454;
 }
 
 .profession {
-    margin: 25px 139px 40px 265px;
-
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0 136px 0 5px;
+    font-family: 'Roboto';
     font-size: 30px;
     color: #575454;
 }
 
 
+.title {
+    font-family: 'Roboto';
+    font-size: 30px;
+    font-weight: 400;
+    color: #1b306c;
+}
 
+li {
+    font-family: 'Roboto';
+    font-size: 20px;
+    font-weight: 400;
+    color: #1c1111;
+    letter-spacing: 1px;
+    line-height: 50px;
+    font-style: italic;
+}
+
+.section-title_code {
+    margin-top: 80px;
+}
+
+.code_example {
+    display: flex;
+    padding: 0 45px 0 0;
+    background-color: #dad0d0;
+    color: #000;
+    font-family: 'Roboto';
+    font-size: 15px;
+}
+
+.text_education {
+    font-family: 'Roboto';
+    font-size: 20px;
+    font-weight: 400;
+    color: #1c1111;
+    letter-spacing: 1px;
+    font-style: italic;
+}
 
 .contacts {
     list-style: none;
     border-radius: 100%;
+}
+
+.contacts li {
+    margin-top: 10px;
+}
+
+.contacts img {
+    margin-right: 10px;
+}
+
+.section-title_skills {
+    margin-bottom: 117px;
+}
+
+.section-title_language {
+    margin-bottom: 228px;
 }
 
 .date {
@@ -117,9 +251,31 @@ body {
 
 .number {
     text-align: center;
+    line-height: 40px;
+    color: #fff;
+    letter-spacing: 2px;
 }
 
-.footer {}
+.footer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 30px;
+    background-color: rgb(46, 46, 47);
+    padding: 0 70px;
+}
+
+.footer a {
+    color: #fff;
+    font-family: 'Roboto';
+    line-height: 50px;
+    letter-spacing: 2px;
+}
+
+.avatar_logo {
+    width: 40px;
+}
 
 @media (max-width: 768px) {
     .section-title {

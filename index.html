@@ -54,7 +54,7 @@
     <main class="main-container">
       <!-- //section title and avatar -->
       <section class="section-title section_avatar" id="profile">
-        <div class="Wrap_avatar">
+        <div class="wrap_avatar">
         <img class="avatar" src="assets/img/fdf.jpeg" alt="my photo" />
       </div>
     <div class="name_avatar">
@@ -64,9 +64,14 @@
       </section>
       <!-- //section title and avatar -->
 
+      <div class="wrapper_blocks">
+
+      <!-- //block left -->
+      <div class="left_block">
+        
       <!-- //section Contacts -->
       <section class="section-title" id="contacts">
-        <h2 class="line">Contacts</h2>
+        <h2 class="title">Contacts</h2>
         <ul class="contacts">
           <li>Location: Minsk, Belarus</li>
           <li>
@@ -95,7 +100,7 @@
       <!-- //section summary -->
       <section class="section-title" id="summary">
         <h2 class="title">Summary</h2>
-        <p>
+        <p class="text_summary">
           My name is Julia. I am an economist by training, but I have been
           working as an accountant for many years. A year ago I became
           interested in programming, namely frontend, because I am a visual
@@ -115,8 +120,8 @@
       <!-- //section education -->
       <section class="section-title" id="education">
         <h2 class="title">Education</h2>
-        <p>University: International Humanitarian Economic Institute</p>
-        <p>Specialty: Economist - manager</p>
+        <p class="text_education">University: International Humanitarian Economic Institute</p>
+        <p class="text_education">Specialty: Economist - manager</p>
       </section>
       <section class="section-title" id="courses">
         <h2 class="title">Courses</h2>
@@ -134,9 +139,15 @@
 
       <!-- //section education -->
 
-      <!-- //section skills -->
-      <section class="section-title" id="skills">
-        <h2 class=title">Skills</h2>
+      </div>
+       <!-- //block left -->
+
+
+        <!-- //block right -->
+        <div class="right_block">
+          <!-- //section skills -->
+      <section class="section-title section-title_skills" id="skills">
+        <h2 class="title">Skills</h2>
         <ul>
           <li>HTML/CSS</li>
           <li>Git</li>
@@ -148,7 +159,7 @@
       <!-- //section skills -->
 
       <!-- //section language -->
-      <section class="section-title" id="language">
+      <section class="section-title section-title_language" id="language">
         <h2 class="title">Language</h2>
         <ul>
           <li>English - Pre-Intermediate</li>
@@ -160,32 +171,35 @@
       <!-- //section language -->
 
       <!-- //section code -->
-      <section class="section-title" id="code">
+      <section class="section-title section-title_code" id="code">
         <h2 class="title">Code Example</h2>
         <pre class="code_example">
           <code>
-            " function startStudies() { 
+            function startStudies() { 
               for (let i = 3; i < 15; i++) {
             console.log(i); } 
-          } "
+          }
           </code>
         </pre>
+        </div>
       </section>
-
       <!-- //section code -->
+
+      <!-- //block rigth -->
+      </div>
+
     </main>
 
     <!-- //block main -->
 
     <!-- //block footer -->
     <footer class="footer">
-      <div class="container"></div>
+
       <p>
         <a href="https://rs.school/js/">
           <img
-            class="avatar"
+            class="avatar_logo"
             src="assets/img/logo.png"
-            width="56"
             alt="logoRs"
           />
         </a>
